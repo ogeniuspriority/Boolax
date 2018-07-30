@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Preview_boolax_media">
+
+
+    <LinearLayout
+        android:id="@+id/thePreviewedPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="100"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/thePreviewedPic_actual_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:maxHeight="400dp"
+            app:srcCompat="@drawable/avatar" />
+
+        <EditText
+            android:id="@+id/thePreviewedPic_caption"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="#cdcdcd"
+            android:ems="10"
+            android:hint="Your caption here!"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/Send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Send" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thePreviewedPAudio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:id="@+id/linear7ayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="200dp"
+            android:layout_weight="60"
+
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/ic_pause_circle_outline_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_pause_circle_outline_black_24dp" />
+
+            <ImageView
+                android:id="@+id/boolax_boo_message_audio_play_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <SeekBar
+                android:id="@+id/boolax_boo_message_seekbar"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_weight="60"
+                android:background="#fff"
+                tools:backgroundTint="@color/blue_btn_bg_color" />
+
+            <TextView
+                android:id="@+id/boolax_boo_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:25"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/boolax_boo_message_time_tot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="---12:25"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/thePreviewedPAudio_caption"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="#cdcdcd"
+            android:ems="10"
+            android:hint="Your caption here!"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/audio_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/audioSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Send" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thePreviewedVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:weightSum="100">
+
+
+        <com.afollestad.easyvideoplayer.EasyVideoPlayer
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80" />
+
+        <EditText
+            android:id="@+id/thePreviewedVideo_actual_video_caption"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="#cdcdcd"
+            android:ems="10"
+            android:hint="Your caption here!"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/back_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/Send_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="45"
+                android:text="Send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

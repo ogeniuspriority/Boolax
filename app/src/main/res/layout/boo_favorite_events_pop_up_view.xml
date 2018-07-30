@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/boo_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Back to school"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/boo_residence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="19th/12/19"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/boo_interested_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="East African Promoters"
+                android:textSize="18sp"
+                android:textColor="#164B39" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/boo_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTRY FEE: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/boo_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="2000RWF"
+                android:textColor="#164B39" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="150">
+
+            <TextView
+                android:id="@+id/boo_height_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Place: " />
+
+            <TextView
+                android:id="@+id/boo_weight_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="REMERA, Petit Stade" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLafyout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="150">
+
+            <TextView
+                android:id="@+id/boo_heifght_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="tags: " />
+
+            <TextView
+                android:id="@+id/boo_weigfht_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#164B39"
+                android:text="music,remera,students,party" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:weightSum="150">
+
+            <ImageView
+                android:id="@+id/boo_avatar"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/avatar" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="100">
+
+
+            </LinearLayout>
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/boo_say_hi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="#cdcdcd"
+                android:gravity="center_horizontal"
+                android:textSize="17dp"
+                app:fb_defaultColor="#218965"
+                app:fb_focusColor="#F08883"
+                app:fb_iconPosition="left"
+                app:fb_radius="3dp"
+                app:fb_text="GOING"
+                android:layout_weight="50"
+                app:fb_textColor="#ffffff" />
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/boo_events_interested_people"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="#cdcdcd"
+                android:gravity="center_horizontal"
+                android:textSize="17dp"
+                app:fb_defaultColor="#F08883"
+                app:fb_focusColor="#F08883"
+                app:fb_iconPosition="left"
+                app:fb_radius="3dp"
+                app:fb_text="PEOPLE INTERESTED"
+                android:layout_weight="50"
+                app:fb_textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

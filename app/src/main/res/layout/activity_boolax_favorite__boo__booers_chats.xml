@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ogeniuspriority.boolax.boolax.Boolax_favorite_Boo_Booers_chats">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F72A21"
+        android:elevation="8dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_favorite_black_24dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_chat_black_24dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/search_through_chatties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="40"
+                android:ems="10"
+                android:hint="Search here"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                android:visibility="invisible"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+
+            <ImageView
+                android:id="@+id/trigger_search_field"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_search_black_24dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_more_vert_black_24dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/boolax_boos_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_weight="85"
+        android:clickable="true"
+        android:dividerHeight="5dp"
+        android:listSelector="@drawable/list_row_selector" />
+
+
+</RelativeLayout>

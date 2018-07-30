@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:weightSum="100"
+    tools:context="com.ogeniuspriority.boolax.boolax.Boolax_favorite_Boo_Booers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F72A21"
+            android:elevation="8dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_favorite_black_24dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_chat_black_24dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_account_circle_black_24dp" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/EmailOrPhoneField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="40"
+                    android:ems="10"
+                    android:hint="Search here"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="22dp"
+                    android:visibility="invisible"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_setBackgroundColor="#fff"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp" />
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="10"
+                    android:src="@drawable/ic_more_vert_black_24dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/my_toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="95"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Interest or motivate people to go out with you!"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:hint="Text here"
+                            android:inputType="textMultiLine"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textViw12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tell people why you need a boo as quickly as possible!"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/editTxt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:hint="Text here"
+                            android:inputType="textMultiLine"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/textVi12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Propose a day you can meet"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/editTx2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:hint="Eg 12/03/2017"
+                            android:inputType="textMultiLine"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/texti12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Propose a time you can meet"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/editx2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:hint="Eg 12:00 AM"
+                            android:inputType="textMultiLine"
+                            android:textSize="22sp" />
+
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            android:id="@+id/Boolax_get_quick_boo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="20dp"
+                            android:text="Log in"
+                            android:textColorHint="#cdcdcd"
+                            android:textSize="25dp"
+                            app:fb_defaultColor="@color/colorAccent"
+                            app:fb_focusColor="#F08883"
+                            app:fb_iconPosition="left"
+                            app:fb_radius="3dp"
+                            app:fb_text="Publish to boolax community."
+                            app:fb_textColor="#FFFFFF" />
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/Boolax_normal_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Log in"
+                        android:textColorHint="#cdcdcd"
+                        android:textSize="17dp"
+                        app:fb_defaultColor="#218965"
+                        app:fb_focusColor="#F08883"
+                        app:fb_iconPosition="left"
+                        app:fb_radius="3dp"
+                        app:fb_text="Edit my quick boo info"
+                        app:fb_textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:background="#cdcdcd"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/boo_favorite_booers_boos_find"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@mipmap/ic_search_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/boo_favorite_events_find"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10"
+                    android:src="@mipmap/ic_today_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/boo_favorite_groups_find"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="15"
+                    android:src="@mipmap/ic_group_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/boo_favorite_quick_boos_find"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="15"
+                    android:src="@mipmap/ic_plus_one_black_24dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/boo_names"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:text="My boos: "
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:typeface="normal" />
+
+
+        <ListView
+            android:id="@+id/boolax_boos_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            android:dividerHeight="5dp"
+            android:clickable="true"
+            android:listSelector="@drawable/list_row_selector" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

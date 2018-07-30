@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ogeniuspriority.boolax.boolax">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:node="replace">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.appstate.APP_ID"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Boolax_splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" />
+        <activity android:name="cafe.adriel.androidaudiorecorder.AudioRecorderActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".boolax_main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Boolax_login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Boolax_create_account" />
+        <activity android:name=".Boolax_create_account_complete" />
+        <activity android:name=".Boolax_favorite_Boo_Booers" />
+        <activity android:name=".Boolax_favorite_Boo_Events" />
+        <activity android:name=".Boolax_favorite_Groups" />
+        <activity android:name=".Boolax_favorite_Quick_boos" />
+        <activity android:name=".Boolax_favorite_Boo_Booers_chats" />
+        <activity android:name=".Boolax_favorite_Boo_Groups_chat" />
+        <activity android:name=".Boolax_profile" />
+        <activity android:name=".Boolax_settings" />
+        <activity android:name=".Boolax_account" />
+        <activity android:name=".Boolax_notifications" />
+        <activity android:name=".Boolax_chats" />
+        <activity android:name=".Boolax_Data_usage" />
+        <activity android:name=".Boolax_privacy" />
+        <activity android:name=".Privacy_help" />
+        <activity android:name=".boolax_add_to_group_activity" />
+        <activity android:name=".boolax_additional_profile_features" />
+        <activity android:name=".boolax_basic_profile" />
+        <activity android:name=".Preview_boolax_media" />
+        <activity
+            android:name=".boolax_booers_chats_chatroom"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".CreateEvent" />
+        <activity android:name=".Boolax_report" />
+        <activity android:name=".boolax_password_verify" />
+        <activity android:name=".boolax_phone_email_verify" />
+        <activity android:name=".Forgot_Password" />
+        <activity android:name="net.alhazmy13.mediapicker.Image.ImageActivity" />
+        <activity
+            android:name="com.afollestad.materialcamera.CaptureActivity"
+            android:theme="@style/MaterialCamera.CaptureActivity" />
+        <activity
+            android:name="com.afollestad.materialcamera.CaptureActivity2"
+            android:theme="@style/MaterialCamera.CaptureActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".MyPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
+    </application>
+
+</manifest>

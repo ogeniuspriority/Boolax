@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ogeniuspriority.boolax.boolax.CreateEvent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F72A21"
+            android:elevation="8dp"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="56dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Create event"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@mipmap/placeholder" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="65"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Theme"
+                        android:textAlignment="viewStart"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15dp"
+                            android:text="0/25"
+                            android:textSize="14sp" />
+
+                        <com.libizo.CustomEditText
+                            android:id="@+id/passwordField"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:textColorHint="#cdcdcd"
+                            android:textSize="22dp"
+                            app:libIZO_clearIconTint="#8f1f15"
+                            app:libIZO_hideShowPasswordIconTint="@color/blue"
+                            app:libIZO_setBackgroundColor="#fff"
+                            app:libIZO_setBorderColor="#8f1f15"
+                            app:libIZO_setBorderView="true"
+                            app:libIZO_setClearIconVisible="true"
+                            app:libIZO_setCornerRadius="4dp"
+                            app:libIZO_setStrokeWidth="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="100"
+                                android:text="Create group" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="Date $ Time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/event_date_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_hideShowPasswordIconTint="@color/blue"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="Key people attending"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/event_key_people_attending"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_hideShowPasswordIconTint="@color/blue"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/event_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_hideShowPasswordIconTint="@color/blue"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="Entry fee"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/event_entry_fee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_hideShowPasswordIconTint="@color/blue"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="Organiser"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.libizo.CustomEditText
+                android:id="@+id/event_organiser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColorHint="#cdcdcd"
+                android:textSize="22dp"
+                app:libIZO_clearIconTint="#8f1f15"
+                app:libIZO_hideShowPasswordIconTint="@color/blue"
+                app:libIZO_setBackgroundColor="#fff"
+                app:libIZO_setBorderColor="#8f1f15"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setCornerRadius="4dp"
+                app:libIZO_setStrokeWidth="2dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/event_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="17dp"
+                    app:fb_defaultColor="#ffffff"
+                    app:fb_focusColor="#F08883"
+                    app:fb_iconPosition="left"
+                    app:fb_radius="3dp"
+                    app:fb_text="Cancel"
+                    app:fb_textColor="#000" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/event_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="17dp"
+                    app:fb_defaultColor="#ffffff"
+                    app:fb_focusColor="#F08883"
+                    app:fb_iconPosition="left"
+                    app:fb_radius="3dp"
+                    app:fb_text="OK"
+                    app:fb_textColor="#000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

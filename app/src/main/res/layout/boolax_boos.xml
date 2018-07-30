@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/request_sent"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:fb_borderColor="#8f1f15"
+        android:visibility="gone"
+        app:fb_borderWidth="1dp"
+        android:layout_gravity="center"
+        app:fb_defaultColor="#ffffff"
+        app:fb_focusColor="#ffffff"
+        app:fb_iconPosition="left"
+        app:fb_radius="8dp"
+        app:fb_text="Hi, Cyuma!"
+        app:fb_textColor="#048BFC"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/boolax_boos_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="5dp"
+            android:clickable="true"
+            android:listSelector="@drawable/list_row_selector" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

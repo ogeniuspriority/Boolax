@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#efefef"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boolax_row_backg"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/boolax_boo_avatar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_weight="15"
+            android:src="@mipmap/placeholder"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="17dp">
+
+            <TextView
+                android:id="@+id/boolax_boo_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="Cyuma Cedric"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/boolax_boo_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="25"
+                android:text="Age: 21"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="17dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/request_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                app:fb_borderColor="#8f1f15"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#048BFC"
+                app:fb_focusColor="#048BFC"
+                android:visibility="invisible"
+                app:fb_iconPosition="left"
+                app:fb_radius="8dp"
+                app:fb_text="request sent"
+                app:fb_textColor="#FFFFFF"
+                app:fb_textSize="10dp" />
+
+            <TextView
+                android:id="@+id/boolax_boo_location_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="25"
+                android:text="Kigali, Gasabo"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/boo_add_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_weight="15"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

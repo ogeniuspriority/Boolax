@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/mage"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ogeniuspriority.boolax.boolax.Boolax_login"
+    tools:showIn="@layout/activity_boolax_login">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7F000000"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/normal_login_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/EmailOrPhoneField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Email or Phone"
+                    android:inputType="textEmailAddress"
+                    android:padding="20dp"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="22dp"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_setBackgroundColor="#fff"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp" />
+
+                <com.libizo.CustomEditText
+                    android:id="@+id/passwordField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="20dp"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="22dp"
+                    app:libIZO_clearIconTint="#8f1f15"
+                    app:libIZO_hideShowPasswordIconTint="@color/blue"
+                    app:libIZO_setBackgroundColor="#fff"
+                    app:libIZO_setBorderColor="#8f1f15"
+                    app:libIZO_setBorderView="true"
+                    app:libIZO_setClearIconVisible="true"
+                    app:libIZO_setCornerRadius="4dp"
+                    app:libIZO_setStrokeWidth="2dp" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/Boolax_normal_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/passwordField"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Log in"
+                    android:textColorHint="#cdcdcd"
+                    android:textSize="15dp"
+                    app:fb_borderColor="#8f1f15"
+                    app:fb_borderWidth="1dp"
+                    app:fb_defaultColor="#FF3C33"
+                    app:fb_focusColor="#F08883"
+                    app:fb_iconPosition="left"
+                    app:fb_radius="3dp"
+                    app:fb_text="Log in"
+                    app:fb_textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boolax_use_other_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/normal_login_panel"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <TextView
+                    android:id="@+id/boolax_use_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="USE"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/boolax_use_other_media_them"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:id="@+id/boolax_use_other_mia_them"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                      >
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/Boolax_facebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="20dp"/>
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/Boolax_google"
+                            android:layout_width="300dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingLeft="50dp"
+                            android:paddingRight="50dp"
+                            android:layout_marginTop="10dp"
+                            app:fb_borderColor="#8f1f15"
+                            app:fb_borderWidth="1dp"
+                            app:fb_defaultColor="#db3236"
+                            app:fb_focusColor="#F08883"
+                            app:fb_iconPosition="left"
+                            app:fb_radius="3dp"
+                            app:fb_text="Google+"
+                            app:fb_textColor="#FFFFFF"
+                            android:visibility="visible"
+                             />
+
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            android:id="@+id/Boolax_vgoogle"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="20dp"
+                            android:text="Google+"
+                            android:textColorHint="#cdcdcd"
+                            android:textSize="15dp"
+                            app:fb_borderColor="#8f1f15"
+                            app:fb_borderWidth="1dp"
+                            app:fb_defaultColor="#db3236"
+                            app:fb_focusColor="#F08883"
+                            app:fb_iconPosition="left"
+                            app:fb_radius="3dp"
+                            app:fb_text="Google+"
+                            app:fb_textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/boolax_create_an_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:visibility="visible"
+                        app:fb_borderColor="#8f1f15"
+                        app:fb_borderWidth="1dp"
+                        app:fb_defaultColor="#7F000000"
+                        app:fb_focusColor="#F08883"
+                        app:fb_iconPosition="left"
+                        app:fb_radius="8dp"
+                        app:fb_text="Or create an account!"
+                        app:fb_textColor="#FFFFFF" />
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/boolax_create_forgot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:visibility="visible"
+                        app:fb_borderColor="#8f1f15"
+                        app:fb_borderWidth="1dp"
+                        app:fb_defaultColor="#7F000000"
+                        app:fb_focusColor="#F08883"
+                        app:fb_iconPosition="left"
+                        app:fb_radius="8dp"
+                        app:fb_text="Forgot password?"
+                        app:fb_textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

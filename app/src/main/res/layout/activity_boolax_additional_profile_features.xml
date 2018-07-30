@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ogeniuspriority.boolax.boolax.boolax_additional_profile_features">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_toolbar"
+            android:background="#F72A21"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/boolax_event_avatar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-40dp"
+                android:layout_weight="15"
+                android:elevation="@dimen/aar_bubble_size"
+                android:src="@mipmap/placeholder"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_toolbar"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/boolax_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="Hello Queen"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_how_attractive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How attractive do you feel?"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_how_attractive_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_life"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about life."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_life_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_love"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about love."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_love_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about relationships."
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_relationship_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_criteria_lover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your lover criteria"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_lover_criteria_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your hobbies"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_hobbies_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_religious_affiliation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your religious affiliation"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_religious_affiliation_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_about_academics_and_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your academics and work"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_about_academics_and_work_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionDone"
+            android:hint="not filled"
+            android:textSize="17sp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/boolax_create_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="60"
+            android:gravity="right"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:visibility="visible"
+            app:fb_defaultColor="#F72A21"
+            app:fb_focusColor="#F08883"
+            app:fb_iconPosition="left"
+            app:fb_radius="8dp"
+            app:fb_text="Continue"
+            app:fb_textColor="#FFFFFF"
+            app:fb_textSize="50sp" />
+    </LinearLayout>
+
+</ScrollView>

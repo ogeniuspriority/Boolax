@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pour_phone"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change the phone number below:"
+            android:textSize="22sp"/>
+
+        <com.libizo.CustomEditText
+            android:id="@+id/boolax_resend_code_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="250000000"
+            android:inputType="phone"
+            android:padding="20dp"
+            android:textColorHint="#cdcdcd"
+            android:textSize="22dp"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_hideShowPasswordIconTint="@color/blue"
+            app:libIZO_setBackgroundColor="#fff"
+            app:libIZO_setBorderColor="#8f1f15"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="4dp"
+            app:libIZO_setStrokeWidth="2dp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/boolax_resend_code_button_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/passwordField"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="Resend Phone Code"
+            android:textColorHint="#cdcdcd"
+            android:textSize="22dp"
+            app:fb_borderColor="#8f1f15"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@color/zhihu_album_title_text"
+            app:fb_focusColor="#F08883"
+            app:fb_iconPosition="left"
+            app:fb_radius="3dp"
+            app:fb_text="Resend  Code"
+            app:fb_textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/pour_email"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change the email below:"
+            android:textSize="22sp"/>
+
+        <com.libizo.CustomEditText
+            android:id="@+id/boolax_resend_code_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="someone@someoane.com"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#cdcdcd"
+            android:textSize="22dp"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_hideShowPasswordIconTint="@color/blue"
+            app:libIZO_setBackgroundColor="#fff"
+            app:libIZO_setBorderColor="#8f1f15"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="4dp"
+            app:libIZO_setStrokeWidth="2dp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/Boolax_normal_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/boolax_resend_code_btn_email"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="Resend Phone Code"
+            android:textColorHint="#cdcdcd"
+            android:textSize="22dp"
+            app:fb_borderColor="#8f1f15"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@color/zhihu_album_title_text"
+            app:fb_focusColor="#F08883"
+            app:fb_iconPosition="left"
+            app:fb_radius="3dp"
+            app:fb_text="Resend  Code"
+            app:fb_textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
